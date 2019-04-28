@@ -9,6 +9,9 @@ body{
 img{
     vertical-align: unset;
 }
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
 #first{
     width: 98%;
 }
@@ -166,4 +169,37 @@ button.btn.btn-md.btn-block:hover{
 }
 #slider-box{
     width: 98%;
+}
+
+/*CATALOG*/
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">";
+    color:#ef4a61;
+}
+.col-form-label-lg {
+    font-size: 1.7rem;
+}
+.form-control {
+    height: auto;
+    line-height: 2.5;
+    border: none;
+    background-color: rgb(246,246,246);
+}
+.form-control:focus {
+    border: none;
+    background-color: rgb(246,246,246);
+    box-shadow: none;
+}
+.breadcrumb{
+    background:none;
+}
+.breadcrumb-item.active{
+    color: black;
+}
+.breadcrumb-item a{
+    color: #9ca4ad;
+}
+.breadcrumb-item a:hover{
+    color: black;
+    text-decoration: none;
 }
